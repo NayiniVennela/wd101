@@ -70,7 +70,7 @@ function updateUserDataTable() {
 }
 function createUserDataTableRow(userData) {
   const row= document.createElement('tr');
-  row.innerHTML=
+  row.innerHTML= `
   <td>${userData.name}</td>
   <td>${userData.email}</td>
   <td>${userDta.password}</td>
