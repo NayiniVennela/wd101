@@ -53,7 +53,7 @@ function saveUserData(userData) {
   localStorage.setItem('userList',JSON.stringify(existingUserData));
 }
 function updateUserDataTable() {
-  userDataTableBody.innerHTML = ";
+  userDataTableBody.innerHTML = ' ';
     const userList=JSON.parse(localStorage.getItem('userList')) || [];
   document.createElement('tr');
   Id(headerRow);
@@ -70,11 +70,12 @@ function updateUserDataTable() {
 }
 function createUserDataTableRow(userData) {
   const row= document.createElement('tr');
-  row.innerHTML=<td>${userData.name}</td>
+  row.innerHTML=
+  <td>${userData.name}</td>
   <td>${userData.email}</td>
   <td>${userDta.password}</td>
   <td>${userData.dob}</td>
-  <td.${userDta.terms?'true':'false'}</td>
+  <td>${userDta.terms ? 'true' : 'false'}</td>
   `;
   return row;
 }
