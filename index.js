@@ -6,7 +6,7 @@ const dobError=document.getElementById('dobError');
 
  window.addEventListener('load', () => {
   updateUserDataTable();
-}};
+});
 
 registrationForm.addEventListener('submit', (event) => {
   event.preventDefault();
